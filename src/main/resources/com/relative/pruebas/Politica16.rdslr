@@ -1,0 +1,12 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica16"
+	dialect "mvel"
+	ruleflow-group "Politica16"
+	when
+		>variablesNegocio : VariablesNegocio( totalGarantia > 10000.00 )
+	then
+		>variablesNegocio.setTotalGarantia( 10000.00 );
+end

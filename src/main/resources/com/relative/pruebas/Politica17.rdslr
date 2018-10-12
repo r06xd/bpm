@@ -1,0 +1,14 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica17"
+	dialect "mvel"
+	ruleflow-group "Politica17"
+	when
+		>parametrosRiesgo : ParametrosRiesgo( riesgoTotal > "20000" )
+		>variablesNegocio : VariablesNegocio( true)
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPolitica( "P17" );
+end

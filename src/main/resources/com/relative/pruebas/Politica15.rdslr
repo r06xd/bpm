@@ -1,0 +1,14 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica15"
+	dialect "mvel"
+	ruleflow-group "Politica15"
+	when
+		>opcion : Opcion( montoFinanciado < 200 )
+		>variablesNegocio : VariablesNegocio( true)
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPolitica( "P15" );
+end

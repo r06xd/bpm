@@ -1,0 +1,14 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica04"
+	dialect "mvel"
+	ruleflow-group "Politica04"
+	when
+		>cliente : Cliente( tipo != "Q" , tipo != "C1" , tipo != "C2" )
+		>variablesNegocio : VariablesNegocio( true)
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPolitica( "P04" );
+end

@@ -1,0 +1,10 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica02"
+	dialect "mvel"
+	ruleflow-group "Politica02"
+	when
+	then
+end

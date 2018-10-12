@@ -1,0 +1,14 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica13"
+	dialect "mvel"
+	ruleflow-group "Politica13"
+	when
+		>cliente : Cliente( impagoQuski == "S" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPolitica( "P13" );
+end

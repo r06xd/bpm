@@ -1,0 +1,14 @@
+package com.relative.pruebas;
+
+import java.lang.Number;
+
+rule "Politica01"
+	dialect "mvel"
+	ruleflow-group "Politica01"
+	when
+		>cliente : Cliente( edad >= 18 , edad <= 74 )
+		>variablesNegocio : VariablesNegocio( true)
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPolitica( "P01" );
+end
