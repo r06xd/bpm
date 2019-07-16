@@ -1,4 +1,0 @@
-package com.relative.pruebas;
-
-global java.lang.Double auxSeguros;
-global java.lang.Double auxSegurosM4;
