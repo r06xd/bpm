@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.relative</groupId>
   <artifactId>brecreditosnuevos</artifactId>
-  <version>2.1.25</version>
+  <version>3.0.6</version>
   <packaging>kjar</packaging>
-  <name>brecreditosnuevos-1</name>
+  <name>brecreditosnuevos</name>
   <description>Proyecto de gestion de reglas denegocio</description>
   <dependencies>
     <dependency>

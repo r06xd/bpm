@@ -26,12 +26,6 @@
         <type>java.util.ArrayList</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.SimularResult</type>
-      </import>
-      <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
-      </import>
-      <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
       </import>
       <import>
@@ -39,6 +33,9 @@
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.OpcionesRenovacion</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Garantia</type>
